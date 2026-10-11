@@ -1,30 +1,26 @@
-# NiXBi multi-project site (GitHub Pages)
+# NiXBi Project Site
 
-Static, responsive multi-project website for NiXBiofc. Default language is English; visitors can switch to Russian with the `RU` / `EN` control in the navigation. The choice is remembered across pages in the browser. The background glow elements are part of the scrolling document and use a subtle scroll-linked parallax effect. No build tools or paid hosting are required.
+A static, responsive portfolio for the independent NiXBi project team. English is the default language; the RU/EN button switches the whole site between English and Russian. The site uses a visible scroll-linked parallax background and reduced-motion fallbacks. No build tools are required.
 
-## Files
-
-- `index.html` — team homepage and project overview
-- `launcher.html` — NIXBI Launcher project page
-- `giftspokupbot.html` — Gifts Pokup Bot project page
+## Pages
+- `index.html` — team introduction and expandable Explore Projects directory
+- `launcher.html` — NIXBI Launcher overview and add-on directory
+- `radial-menu.html` — Radial Menu add-on page
+- `gmail-integration.html` — Gmail Integration add-on page
+- `youtube-downloader.html` — YouTube Downloader add-on page
+- `giftspokupbot.html` — Gifts Pokup Bot overview
 - `privacy.html` — privacy policy
 - `terms.html` — terms of use
-- `styles.css` — responsive dark-green styling and scrollable background glows
-- `site.js` — language toggle and background motion
-- `.nojekyll` — publish static files as-is
+- `styles.css` — responsive design and product illustrations
+- `site.js` — language toggle, expandable project directory, scroll progress, and parallax
 
-## Update GitHub Pages
+## Publish to GitHub Pages
+Upload the **contents** of this folder (not the ZIP) to the root of `NiXBiofc/NiXBiofc.github.io`, commit the changes, and ensure Settings → Pages publishes from `main` and `/(root)`.
 
-Upload the **contents** of this folder to the root of `NiXBiofc/NiXBiofc.github.io`, replacing old HTML/CSS files and adding `site.js`. Do not upload the ZIP itself. Commit changes and verify that Settings → Pages publishes from branch `main`, folder `/ (root)`.
+The current GitHub Pages URL is `https://nixbiofc.github.io/`. Paths like `launcher.html` are pages on the same site, not real subdomains. Real project subdomains require a domain or a delegated subdomain and DNS configuration.
 
-Current free URLs:
+## Important Google OAuth note
+Review `privacy.html` against the exact released application and the requested Google OAuth scopes before submission. The current launcher has requested `gmail.readonly`, which is a restricted scope. This site template is not itself proof of Google verification. Never commit OAuth client JSON, client secrets, access or refresh tokens, or user-specific configuration.
 
-- `https://nixbiofc.github.io/` — team homepage
-- `https://nixbiofc.github.io/launcher.html` — NIXBI Launcher
-- `https://nixbiofc.github.io/giftspokupbot.html` — Gifts Pokup Bot
-
-These are pages on one GitHub Pages site, not true subdomains. Real project subdomains require a base domain (or a domain delegated to you) plus DNS configuration.
-
-## Before submitting Google OAuth verification
-
-Review `privacy.html` against the exact released launcher, OAuth scopes, and token handling. In particular, `gmail.readonly` grants broader access than simply displaying labels. The website's existence does not guarantee Google will accept a GitHub Pages hostname for OAuth branding or verification. Never upload OAuth client JSON files containing secrets, access/refresh tokens, or user-specific launcher configuration to this public repository.
+## Product status accuracy
+Download buttons are intentionally marked as coming soon. Do not enable them until a distribution package and release process exist. The Gifts Pokup Bot page describes it as a beta workflow with manager assistance and cautions that the project's claims are not independently verified.
