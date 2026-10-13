@@ -24,3 +24,10 @@ Review `privacy.html` against the exact released application and the requested G
 
 ## Product status accuracy
 Download buttons are intentionally marked as coming soon. Do not enable them until a distribution package and release process exist. The Gifts Pokup Bot page describes it as a beta workflow with manager assistance and cautions that the project's claims are not independently verified.
+
+
+## Launcher page screenshots
+
+The Launcher page has a four-slide carousel with smooth transitions, left/right arrows, and active pagination dots. Add your own screenshots as `assets/launcher/screenshot-1.png` through `screenshot-4.png`. Do not upload the screenshots as part of a nested folder: keep the exact `assets/launcher/` path in the repository.
+
+The Download for Windows buttons point to the latest GitHub Release asset named `NIXBI-Launcher-Setup.exe` in this website repository. Create a GitHub Release and attach that installer to activate the download.
