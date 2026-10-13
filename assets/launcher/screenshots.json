@@ -1,0 +1,20 @@
+{
+  "screenshots": [
+    {
+      "src": "assets/launcher/screenshot-1.png",
+      "alt": "NIXBI Launcher screenshot 1"
+    },
+    {
+      "src": "assets/launcher/screenshot-2.png",
+      "alt": "NIXBI Launcher screenshot 2"
+    },
+    {
+      "src": "assets/launcher/screenshot-3.png",
+      "alt": "NIXBI Launcher screenshot 3"
+    },
+    {
+      "src": "assets/launcher/screenshot-4.png",
+      "alt": "NIXBI Launcher screenshot 4"
+    }
+  ]
+}

@@ -1,33 +1,21 @@
 # NiXBi Project Site
 
-A static, responsive portfolio for the independent NiXBi project team. English is the default language; the RU/EN button switches the whole site between English and Russian. The site uses a visible scroll-linked parallax background and reduced-motion fallbacks. No build tools are required.
+A static, responsive portfolio for the independent NiXBi project team. English is the default language; the RU/EN button switches the whole site between English and Russian. No build tools are required.
 
 ## Pages
-- `index.html` — team introduction and expandable Explore Projects directory
-- `launcher.html` — NIXBI Launcher overview and add-on directory
-- `radial-menu.html` — Radial Menu add-on page
-- `gmail-integration.html` — Gmail Integration add-on page
-- `youtube-downloader.html` — YouTube Downloader add-on page
+- `index.html` — team introduction and expandable project directory
+- `launcher.html` — NIXBI Launcher overview, screenshot carousel, and add-ons
+- `radial-menu.html`, `gmail-integration.html`, `youtube-downloader.html` — launcher add-ons
 - `giftspokupbot.html` — Gifts Pokup Bot overview
-- `privacy.html` — privacy policy
-- `terms.html` — terms of use
-- `styles.css` — responsive design and product illustrations
-- `site.js` — language toggle, expandable project directory, scroll progress, and parallax
+- `privacy.html`, `terms.html` — policy and terms
+- `styles.css`, `site.js` — site design and interactions
+
+## Add any number of launcher screenshots
+Put image files in `assets/launcher/` and list them in `assets/launcher/screenshots.json`. There is no fixed limit and filenames can be anything, including `settings-final.webp` or `radial-menu-2026.png`. Each item needs a `src`; `alt` and `caption` are optional. If `caption` is omitted, no caption is shown. Missing or invalid files are ignored, with no placeholder cards displayed.
+
+Example entry: `{ "src": "assets/launcher/settings-final.webp", "alt": "Launcher settings screen" }`. Add as many entries to the `screenshots` array as you want.
 
 ## Publish to GitHub Pages
-Upload the **contents** of this folder (not the ZIP) to the root of `NiXBiofc/NiXBiofc.github.io`, commit the changes, and ensure Settings → Pages publishes from `main` and `/(root)`.
+Upload the contents of this folder to the root of `NiXBiofc/NiXBiofc.github.io`, commit the changes, and ensure Settings → Pages publishes from `main` and `/(root)`.
 
-The current GitHub Pages URL is `https://nixbiofc.github.io/`. Paths like `launcher.html` are pages on the same site, not real subdomains. Real project subdomains require a domain or a delegated subdomain and DNS configuration.
-
-## Important Google OAuth note
-Review `privacy.html` against the exact released application and the requested Google OAuth scopes before submission. The current launcher has requested `gmail.readonly`, which is a restricted scope. This site template is not itself proof of Google verification. Never commit OAuth client JSON, client secrets, access or refresh tokens, or user-specific configuration.
-
-## Product status accuracy
-Download buttons are intentionally marked as coming soon. Do not enable them until a distribution package and release process exist. The Gifts Pokup Bot page describes it as a beta workflow with manager assistance and cautions that the project's claims are not independently verified.
-
-
-## Launcher page screenshots
-
-The Launcher page has a four-slide carousel with smooth transitions, left/right arrows, and active pagination dots. Add your own screenshots as `assets/launcher/screenshot-1.png` through `screenshot-4.png`. Do not upload the screenshots as part of a nested folder: keep the exact `assets/launcher/` path in the repository.
-
-The Download for Windows buttons point to the latest GitHub Release asset named `NIXBI-Launcher-Setup.exe` in this website repository. Create a GitHub Release and attach that installer to activate the download.
+Review `privacy.html` against the actual released app and its OAuth scopes before submitting Google OAuth verification. Never commit client secrets, user tokens, or private account configuration.
