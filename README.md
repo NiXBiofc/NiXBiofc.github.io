@@ -5,7 +5,7 @@ A static, responsive portfolio for the independent NiXBi project team. English i
 ## Pages
 - `index.html` — team introduction and expandable project directory
 - `launcher.html` — NIXBI Launcher overview, screenshot carousel, and add-ons
-- `radial-menu.html`, `gmail-integration.html`, `youtube-downloader.html` — launcher add-ons
+- `nixbi-menu.html`, `gmail-integration.html`, `youtube-downloader.html` — launcher extensions
 - `giftspokupbot.html` — Gifts Pokup Bot overview
 - `privacy.html`, `terms.html` — policy and terms
 - `styles.css`, `site.js` — site design and interactions
