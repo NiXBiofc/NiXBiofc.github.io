@@ -47,3 +47,16 @@
 .gallery-dot.is-active{width:25px;border-radius:9px;background:var(--green);box-shadow:0 0 17px rgba(117,226,151,.36)}
 @media(max-width:700px){.launcher-gallery-section{padding-top:24px}.launcher-gallery-slide{padding:8px}.launcher-gallery-viewport{border-radius:15px}.gallery-media{border-radius:9px;aspect-ratio:4/3}.launcher-gallery-controls{gap:18px;padding-top:14px}.gallery-arrow{width:38px;height:38px}.gallery-caption{padding-top:11px;font-size:11px}}
 @media(prefers-reduced-motion:reduce){.launcher-gallery-track,.gallery-media img,.gallery-arrow,.gallery-dot{transition:none!important}}
+
+/* NIXBI Menu project artwork */
+.visual-menu,.art-menu{background:radial-gradient(ellipse at 50% 45%,rgba(69,157,96,.22),transparent 68%),linear-gradient(145deg,#10291a,#07140d)}
+.menu-preview{position:relative;width:82%;height:150px;margin:auto;display:flex;align-items:center;justify-content:center}
+.menu-notch{position:absolute;top:10px;left:50%;transform:translateX(-50%);width:112px;height:25px;border:1px solid rgba(180,238,194,.28);border-radius:0 0 13px 13px;background:#07130c;display:flex;align-items:center;justify-content:center;gap:7px}
+.menu-notch i{width:4px;height:4px;border-radius:50%;background:#83c998}
+.menu-preview-panel{position:relative;width:76%;height:105px;margin-top:35px;border:1px solid rgba(180,238,194,.2);border-radius:14px;background:rgba(8,25,15,.88);box-shadow:0 16px 35px rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;gap:10px}
+.menu-preview-panel span{width:34px;height:34px;border:1px solid rgba(164,229,177,.25);border-radius:10px;background:rgba(53,112,69,.25)}
+.menu-preview-panel b{position:absolute;top:9px;left:12px;color:var(--mint);font-size:11px}
+.status-cancelled{color:#d0b7b7;background:rgba(130,72,72,.15);border-color:rgba(191,127,127,.22)}
+.visual-cancelled{display:grid;place-items:center;background:linear-gradient(145deg,#211719,#100d0e)}
+.cancelled-mark{width:76px;height:76px;border:1px solid rgba(205,150,150,.35);border-radius:22px;display:grid;place-items:center;color:#c48b8b;font-size:54px;font-weight:300}
+.project-cancelled{opacity:.72;filter:saturate(.65)}.project-cancelled:hover{opacity:1}
