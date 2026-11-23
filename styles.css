@@ -86,3 +86,7 @@
 .vacancy-telegram{white-space:nowrap}
 .vacancy-handle{display:block;margin-top:8px;color:var(--green);font:13px var(--mono)}
 @media(max-width:700px){.vacancies-page{padding:45px 0 72px}.vacancies-hero{border-radius:23px}.vacancies-lead{font-size:15px}.vacancies-section{border-radius:20px}.vacancy-contact{align-items:flex-start}.vacancy-telegram{width:100%}}
+
+
+/* Keep the vacancies content above the fixed decorative background. */
+.vacancies-page{position:relative;z-index:1}
