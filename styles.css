@@ -88,5 +88,14 @@
 @media(max-width:700px){.vacancies-page{padding:45px 0 72px}.vacancies-hero{border-radius:23px}.vacancies-lead{font-size:15px}.vacancies-section{border-radius:20px}.vacancy-contact{align-items:flex-start}.vacancy-telegram{width:100%}}
 
 
-/* Keep the vacancies content above the fixed decorative background. */
-.vacancies-page{position:relative;z-index:1}
+/* Isolate the vacancies page from the fixed decorative scene.
+   Each content section gets its own explicit stacking level on mobile browsers. */
+.vacancies-page{position:relative;z-index:2;isolation:isolate;display:flow-root}
+.vacancies-page>section{position:relative;z-index:1;display:flow-root}
+.vacancies-hero,.vacancies-section,.vacancy-contact{transform:none;backface-visibility:visible}
+@media(max-width:700px){
+  .vacancies-page{padding:45px 0 72px}
+  .vacancies-page>section{float:none;clear:both}
+  .vacancies-section{margin-top:28px}
+  .vacancy-contact{margin-top:28px}
+}
